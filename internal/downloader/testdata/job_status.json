@@ -1,0 +1,532 @@
+{
+    "links": {},
+    "origin": "https://localhost:8000/services/search/v2/jobs",
+    "updated": "2025-08-26T01:49:46+00:00",
+    "generator": {
+        "build": "8c495c6a1f7d",
+        "version": "9.3.6"
+    },
+    "entry": [
+        {
+            "name": "search index=_internal  sourcetype=splunkd_access 1756172475.1153",
+            "id": "https://localhost:8000/services/search/v2/jobs/1756172871.1180",
+            "updated": "2025-08-26T01:49:46.694+00:00",
+            "links": {
+                "alternate": "/services/search/v2/jobs/1756172871.1180",
+                "search_telemetry.json": "/services/search/v2/jobs/1756172871.1180/search_telemetry.json",
+                "search.log": "/services/search/v2/jobs/1756172871.1180/search.log",
+                "events": "/services/search/v2/jobs/1756172871.1180/events",
+                "results": "/services/search/v2/jobs/1756172871.1180/results",
+                "results_preview": "/services/search/v2/jobs/1756172871.1180/results_preview",
+                "timeline": "/services/search/v2/jobs/1756172871.1180/timeline",
+                "summary": "/services/search/v2/jobs/1756172871.1180/summary",
+                "control": "/services/search/v2/jobs/1756172871.1180/control"
+            },
+            "published": "2025-08-26T01:47:51.000+00:00",
+            "author": "admin",
+            "content": {
+                "canSummarize": false,
+                "cursorTime": "1970-01-01T00:00:00.000+00:00",
+                "defaultSaveTTL": "604800",
+                "defaultTTL": "600",
+                "delegate": "",
+                "diskUsage": 94208,
+                "dispatchState": "DONE",
+                "doneProgress": 1,
+                "dropCount": 0,
+                "earliestTime": "2025-08-25T01:00:00.000+00:00",
+                "eventAvailableCount": 10,
+                "eventCount": 10,
+                "eventFieldCount": 38,
+                "eventIsStreaming": true,
+                "eventIsTruncated": false,
+                "eventSearch": "search (1756172475.1153 index=_internal sourcetype=splunkd_access)",
+                "eventSorting": "desc",
+                "indexEarliestTime": 1756172492,
+                "indexLatestTime": 1756172773,
+                "isBatchModeSearch": false,
+                "isDone": true,
+                "isEventsPreviewEnabled": false,
+                "isFailed": false,
+                "isFinalized": false,
+                "isPaused": false,
+                "isPreviewEnabled": true,
+                "isRealTimeSearch": false,
+                "isRemoteTimeline": false,
+                "isSaved": false,
+                "isSavedSearch": false,
+                "isTimeCursored": true,
+                "isZombie": false,
+                "is_prjob": false,
+                "keywords": "*1756172475.1153* index::_internal sourcetype::splunkd_access",
+                "label": "",
+                "latestTime": "2025-08-26T01:47:51.000+00:00",
+                "normalizedSearch": "litsearch (index=_internal sourcetype=splunkd_access 1756172475.1153) | fields keepcolorder=t \"_bkt\" \"_cd\" \"_si\" \"host\" \"index\" \"linecount\" \"source\" \"sourcetype\" \"splunk_server\"",
+                "numPreviews": 0,
+                "optimizedSearch": "| search (1756172475.1153 index=_internal sourcetype=splunkd_access)",
+                "phase0": "litsearch (1756172475.1153 index=_internal sourcetype=splunkd_access) | fields  keepcolorder=t \"*\" \"_bkt\" \"_cd\" \"_si\" \"host\" \"index\" \"linecount\" \"source\" \"sourcetype\" \"splunk_server\"",
+                "phase1": "timeliner  remote=0 partial_commits=1 max_events_per_bucket=1000 fieldstats_update_maxperiod=60 bucket=300 extra_field=*",
+                "pid": "74495",
+                "priority": 5,
+                "provenance": "UI:Search",
+                "remoteSearch": "litsearch (1756172475.1153 index=_internal sourcetype=splunkd_access) | fields  keepcolorder=t \"*\" \"_bkt\" \"_cd\" \"_si\" \"host\" \"index\" \"linecount\" \"source\" \"sourcetype\" \"splunk_server\"",
+                "reportSearch": "",
+                "resultCount": 10,
+                "resultIsStreaming": true,
+                "resultPreviewCount": 10,
+                "runDuration": 0.078,
+                "sampleRatio": "1",
+                "sampleSeed": "0",
+                "scanCount": 42,
+                "search": "search index=_internal  sourcetype=splunkd_access 1756172475.1153",
+                "searchCanBeEventType": true,
+                "searchEarliestTime": 1756083600,
+                "searchLatestTime": 1756172871,
+                "searchTotalBucketsCount": 3,
+                "searchTotalEliminatedBucketsCount": 0,
+                "sid": "1756172871.1180",
+                "statusBuckets": 300,
+                "ttl": 600,
+                "workload_action_information": "",
+                "workload_pool": "",
+                "performance": {
+                    "command.fields": {
+                        "invocations": 2,
+                        "input_count": 10,
+                        "output_count": 10
+                    },
+                    "command.search": {
+                        "duration_secs": 0.005,
+                        "invocations": 2,
+                        "input_count": 0,
+                        "output_count": 10
+                    },
+                    "command.search.calcfields": {
+                        "invocations": 1,
+                        "input_count": 42,
+                        "output_count": 42
+                    },
+                    "command.search.expand_search": {
+                        "duration_secs": 0.007,
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.calcfield": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.fieldaliaser": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.indexed_fields": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.kv": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.lookup": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.sourcetype": {
+                        "duration_secs": 0.002,
+                        "invocations": 1
+                    },
+                    "command.search.fieldalias": {
+                        "invocations": 1,
+                        "input_count": 42,
+                        "output_count": 42
+                    },
+                    "command.search.filter": {
+                        "duration_secs": 0.001,
+                        "invocations": 1,
+                        "input_count": 42,
+                        "output_count": 10
+                    },
+                    "command.search.index": {
+                        "duration_secs": 0.001,
+                        "invocations": 2
+                    },
+                    "command.search.index.usec_1_8": {
+                        "invocations": 383
+                    },
+                    "command.search.index.usec_64_512": {
+                        "invocations": 1
+                    },
+                    "command.search.index.usec_8_64": {
+                        "invocations": 1
+                    },
+                    "command.search.kv": {
+                        "duration_secs": 0.001,
+                        "invocations": 1
+                    },
+                    "command.search.lookups": {
+                        "invocations": 1,
+                        "input_count": 42,
+                        "output_count": 42
+                    },
+                    "command.search.parse_directives": {
+                        "invocations": 1
+                    },
+                    "command.search.rawdata": {
+                        "duration_secs": 0.002,
+                        "invocations": 1
+                    },
+                    "command.search.summary": {
+                        "invocations": 2
+                    },
+                    "command.search.tags": {
+                        "invocations": 1,
+                        "input_count": 10,
+                        "output_count": 10
+                    },
+                    "command.search.track_sourcetypes": {
+                        "invocations": 2
+                    },
+                    "command.search.typer": {
+                        "invocations": 1,
+                        "input_count": 10,
+                        "output_count": 10
+                    },
+                    "command.timeliner": {
+                        "duration_secs": 0.002,
+                        "invocations": 3,
+                        "input_count": 10,
+                        "output_count": 10
+                    },
+                    "dispatch.evaluate.search": {
+                        "duration_secs": 0.016,
+                        "invocations": 1
+                    },
+                    "dispatch.fetch.rcp.phase_0": {
+                        "duration_secs": 0.026,
+                        "invocations": 3
+                    },
+                    "dispatch.finalWriteToDisk": {
+                        "invocations": 1
+                    },
+                    "dispatch.localSearch": {
+                        "duration_secs": 0.005,
+                        "invocations": 1
+                    },
+                    "dispatch.readEventsInResults": {
+                        "invocations": 1
+                    },
+                    "dispatch.stream.local": {
+                        "duration_secs": 0.005,
+                        "invocations": 2
+                    },
+                    "dispatch.timeline": {
+                        "duration_secs": 0.001,
+                        "invocations": 3
+                    },
+                    "dispatch.writeStatus": {
+                        "duration_secs": 0.002,
+                        "invocations": 3
+                    },
+                    "startup.configuration": {
+                        "duration_secs": 0.022,
+                        "invocations": 1
+                    },
+                    "startup.handoff": {
+                        "duration_secs": 0.009,
+                        "invocations": 1
+                    }
+                },
+                "messages": [],
+                "request": {
+                    "adhoc_search_level": "smart",
+                    "auto_cancel": "62",
+                    "check_risky_command": "false",
+                    "custom.dispatch.earliest_time": "-24h@h",
+                    "custom.dispatch.latest_time": "now",
+                    "custom.dispatch.sample_ratio": "1",
+                    "custom.display.page.search.mode": "smart",
+                    "custom.search": "index=_internal  sourcetype=splunkd_access 1756172475.1153",
+                    "custom.workload_pool": "",
+                    "earliest_time": "-24h@h",
+                    "indexedRealtime": "",
+                    "latest_time": "now",
+                    "preview": "1",
+                    "provenance": "UI:Search",
+                    "rf": "*",
+                    "sample_ratio": "1",
+                    "search": "search index=_internal  sourcetype=splunkd_access 1756172475.1153",
+                    "status_buckets": "300",
+                    "ui_dispatch_app": "search",
+                    "workload_pool": ""
+                },
+                "custom": {
+                    "dispatch.earliest_time": "-24h@h",
+                    "dispatch.latest_time": "now",
+                    "dispatch.sample_ratio": "1",
+                    "display.page.search.mode": "smart",
+                    "search": "index=_internal  sourcetype=splunkd_access 1756172475.1153",
+                    "workload_pool": ""
+                },
+                "runtime": {
+                    "auto_cancel": "62",
+                    "auto_pause": "0"
+                },
+                "searchProviders": [
+                    "1a79344b7a02"
+                ],
+                "searchTelemetry": {
+                    "timestamp": "1756172871.530210",
+                    "type": "ad-hoc",
+                    "search_id": "1756172871.1180",
+                    "root_search_id": "1756172871.1180",
+                    "status": "success",
+                    "ast": {
+                        "ast_optimize": true,
+                        "ast_visitor": [
+                            "predicate_push",
+                            "search_expansion",
+                            "predicate_merge",
+                            "predicate_split",
+                            "search_sort_normalization",
+                            "search_flip_normalization",
+                            "eval_merge",
+                            "projection_elimination"
+                        ],
+                        "ast_modified": [
+                            "predicate_push"
+                        ]
+                    },
+                    "desc": {
+                        "app": "search",
+                        "provenance": "UI:Search",
+                        "earliest_time": 1756083600,
+                        "latest_time": 1756172871,
+                        "comments": false,
+                        "batch_mode_search": false,
+                        "nested_subsearches_flag": false,
+                        "sourcetypes": {
+                            "splunkd_access": 10
+                        },
+                        "search_process_modes": {
+                            "undefined": 0,
+                            "freestanding": 0,
+                            "forked": 0,
+                            "preforked_first": 0,
+                            "preforked_same_user": 1,
+                            "preforked_different_user": 0
+                        }
+                    },
+                    "perf": {
+                        "bytes_read": 11504,
+                        "scan_count": 42,
+                        "results_count": 10,
+                        "subsearch_count": 0,
+                        "subsearch_auto_finalized_count": 0,
+                        "subsearch_properties": {},
+                        "non_time_ordered_results_dropped": 0,
+                        "search_runtime_secs": 0.078,
+                        "search_preview_time_secs": 0,
+                        "execution_cost": {
+                            "dispatch.finalWriteToDisk": 0.000356041,
+                            "dispatch.evaluate": 0.022475541,
+                            "dispatch.timeline": 0.000534332,
+                            "dispatch.createdSearchResultInfrastructure": 0.000582458,
+                            "dispatch.localSearch": 0.00475175,
+                            "dispatch.writeStatus": 0.000626791,
+                            "dispatch.stream.local": 0.004658542,
+                            "dispatch.readEventsInResults": 0.00025475
+                        }
+                    },
+                    "phases": {
+                        "phases_count": 2,
+                        "phase_1": {
+                            "elapsed_time_aggregations": {
+                                "avg": 0.08,
+                                "max": 0.08,
+                                "min": 0.08,
+                                "sum": 0.08,
+                                "count": 1
+                            },
+                            "nodes_count": 1
+                        }
+                    },
+                    "buckets": {
+                        "bloom_eliminated_rawsize": 0,
+                        "bloom_eliminated_buckets": 0,
+                        "meta_eliminated_buckets": 0,
+                        "searched_buckets": 3,
+                        "bloom_probable_hits": 0,
+                        "buckets_without_bloomfilter": 3,
+                        "max_bucket_fetch_secs": 0
+                    },
+                    "search_commands": [
+                        {
+                            "name": "litsearch",
+                            "telemetryID": "14408714551704241697.0.0",
+                            "dagID": "",
+                            "duration": 0.006,
+                            "maxPeerDuration": 0.006,
+                            "outputCount": 10,
+                            "count": {
+                                "evalargs_seconds": 0.029310166
+                            },
+                            "span": {
+                                "start": 1756172871.5180001,
+                                "end": 1756172871.523
+                            }
+                        },
+                        {
+                            "name": "fieldaliaser",
+                            "telemetryID": "14408714551704241697.0.0.0.0",
+                            "dagID": "",
+                            "duration": 0.001,
+                            "maxPeerDuration": 0.001,
+                            "inputCount": 42,
+                            "outputCount": 42,
+                            "span": {
+                                "start": 1756172871.5210001,
+                                "end": 1756172871.522
+                            }
+                        },
+                        {
+                            "name": "calcfield",
+                            "telemetryID": "14408714551704241697.0.0.0.1",
+                            "dagID": "",
+                            "duration": 0.001,
+                            "maxPeerDuration": 0.001,
+                            "inputCount": 42,
+                            "outputCount": 42,
+                            "span": {
+                                "start": 1756172871.5210001,
+                                "end": 1756172871.522
+                            }
+                        },
+                        {
+                            "name": "lookup",
+                            "telemetryID": "14408714551704241697.0.0.0.2",
+                            "dagID": "",
+                            "duration": 0.001,
+                            "maxPeerDuration": 0.001,
+                            "inputCount": 42,
+                            "outputCount": 42,
+                            "count": {
+                                "init_time": 0.002466625
+                            },
+                            "span": {
+                                "start": 1756172871.5210001,
+                                "end": 1756172871.522
+                            }
+                        },
+                        {
+                            "name": "kv",
+                            "telemetryID": "14408714551704241697.0.0.0.3",
+                            "dagID": "",
+                            "duration": 0.001,
+                            "maxPeerDuration": 0.001,
+                            "count": {
+                                "autoKV_seconds": 0,
+                                "configured_seconds": 0,
+                                "multiKV_seconds": 0,
+                                "set_required_fields_seconds": 0.006134542,
+                                "spath_seconds": 0
+                            },
+                            "span": {
+                                "start": 1756172871.52,
+                                "end": 1756172871.5210001
+                            }
+                        },
+                        {
+                            "name": "fields",
+                            "telemetryID": "14408714551704241697.0.1",
+                            "dagID": "",
+                            "duration": 0.002,
+                            "maxPeerDuration": 0.002,
+                            "inputCount": 10,
+                            "outputCount": 10,
+                            "span": {
+                                "start": 1756172871.522,
+                                "end": 1756172871.523
+                            }
+                        },
+                        {
+                            "name": "timeliner",
+                            "telemetryID": "1497244161992834864.0.0",
+                            "dagID": "1.1",
+                            "duration": 0.004,
+                            "maxPeerDuration": 0.004,
+                            "inputCount": 10,
+                            "outputCount": 10,
+                            "span": {
+                                "start": 1756172871.522,
+                                "end": 1756172871.525
+                            }
+                        },
+                        {
+                            "name": "typer",
+                            "telemetryID": "15849410590227250372.0.0",
+                            "dagID": "",
+                            "duration": 0.001,
+                            "maxPeerDuration": 0.001,
+                            "inputCount": 10,
+                            "outputCount": 10,
+                            "span": {
+                                "start": 1756172871.522,
+                                "end": 1756172871.523
+                            }
+                        },
+                        {
+                            "name": "tags",
+                            "telemetryID": "15849410590227250372.0.1",
+                            "dagID": "",
+                            "duration": 0.001,
+                            "maxPeerDuration": 0.001,
+                            "inputCount": 10,
+                            "outputCount": 10,
+                            "span": {
+                                "start": 1756172871.522,
+                                "end": 1756172871.523
+                            }
+                        },
+                        {
+                            "name": "resultsCollationProcessor",
+                            "telemetryID": "9704298620890529942.0.0",
+                            "dagID": "1.0",
+                            "duration": 0.028,
+                            "maxPeerDuration": 0.028,
+                            "outputCount": 20,
+                            "span": {
+                                "start": 1756172871.496,
+                                "end": 1756172871.525
+                            }
+                        }
+                    ],
+                    "feature_flags": {
+                        "enabled": [
+                            "parallelreduce:enablePreview",
+                            "searchresults:srs2",
+                            "search:read_final_results_from_timeliner",
+                            "search:fetch_remote_search_telemetry",
+                            "testing:percent_flag",
+                            "testing:legacy_flag"
+                        ]
+                    }
+                }
+            },
+            "acl": {
+                "perms": {
+                    "read": [
+                        "admin"
+                    ],
+                    "write": [
+                        "admin"
+                    ]
+                },
+                "owner": "admin",
+                "modifiable": true,
+                "sharing": "global",
+                "app": "search",
+                "can_write": true,
+                "ttl": "600"
+            }
+        }
+    ],
+    "paging": {
+        "total": 1,
+        "perPage": 0,
+        "offset": 0
+    }
+}

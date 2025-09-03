@@ -1,0 +1,519 @@
+{
+    "links": {},
+    "origin": "https://localhost:8000/services/search/v2/jobs",
+    "updated": "2025-08-24T20:16:39+00:00",
+    "generator": {
+        "build": "8c495c6a1f7d",
+        "version": "9.3.6"
+    },
+    "entry": [
+        {
+            "name": "search index=_internal | table _raw",
+            "id": "https://localhost:8000/services/search/v2/jobs/1756064805.1039",
+            "updated": "2025-08-24T20:16:39.668+00:00",
+            "links": {
+                "alternate": "/services/search/v2/jobs/1756064805.1039",
+                "search_telemetry.json": "/services/search/v2/jobs/1756064805.1039/search_telemetry.json",
+                "search.log": "/services/search/v2/jobs/1756064805.1039/search.log",
+                "events": "/services/search/v2/jobs/1756064805.1039/events",
+                "results": "/services/search/v2/jobs/1756064805.1039/results",
+                "results_preview": "/services/search/v2/jobs/1756064805.1039/results_preview",
+                "timeline": "/services/search/v2/jobs/1756064805.1039/timeline",
+                "summary": "/services/search/v2/jobs/1756064805.1039/summary",
+                "control": "/services/search/v2/jobs/1756064805.1039/control"
+            },
+            "published": "2025-08-24T19:46:45.000+00:00",
+            "author": "admin",
+            "content": {
+                "canSummarize": false,
+                "cursorTime": "1970-01-01T00:00:00.000+00:00",
+                "defaultSaveTTL": "604800",
+                "defaultTTL": "600",
+                "delegate": "",
+                "diskUsage": 3768320,
+                "dispatchState": "DONE",
+                "doneProgress": 1,
+                "dropCount": 0,
+                "earliestTime": "2025-08-23T19:46:45.000+00:00",
+                "eventAvailableCount": 0,
+                "eventCount": 154569,
+                "eventFieldCount": 0,
+                "eventIsStreaming": true,
+                "eventIsTruncated": false,
+                "eventSearch": "search index=_internal",
+                "eventSorting": "none",
+                "isBatchModeSearch": true,
+                "isDone": true,
+                "isEventsPreviewEnabled": false,
+                "isFailed": false,
+                "isFinalized": false,
+                "isPaused": false,
+                "isPreviewEnabled": false,
+                "isRealTimeSearch": false,
+                "isRemoteTimeline": false,
+                "isSaved": false,
+                "isSavedSearch": false,
+                "isTimeCursored": true,
+                "isZombie": false,
+                "is_prjob": false,
+                "keywords": "index::_internal",
+                "label": "",
+                "latestTime": "2025-08-24T19:46:45.000+00:00",
+                "normalizedSearch": "litsearch index=_internal | fields keepcolorder=t \"_raw\"",
+                "numPreviews": 0,
+                "optimizedSearch": "| search index=_internal | table _raw",
+                "phase0": "litsearch index=_internal | fields  keepcolorder=t \"_raw\"",
+                "phase1": "addinfo  type=count label=prereport_events track_fieldmeta_events=true | table  _raw",
+                "pid": "50514",
+                "priority": 5,
+                "provenance": "",
+                "remoteSearch": "litsearch index=_internal | fields  keepcolorder=t \"_raw\"",
+                "reportSearch": "table  _raw",
+                "resultCount": 154569,
+                "resultIsStreaming": false,
+                "resultPreviewCount": 154569,
+                "runDuration": 0.522,
+                "sampleRatio": "1",
+                "sampleSeed": "0",
+                "scanCount": 154569,
+                "search": "search index=_internal | table _raw",
+                "searchCanBeEventType": false,
+                "searchEarliestTime": 1755978405,
+                "searchLatestTime": 1756064805,
+                "searchTotalBucketsCount": 2,
+                "searchTotalEliminatedBucketsCount": 0,
+                "sid": "1756064805.1039",
+                "statusBuckets": 0,
+                "ttl": 86400,
+                "workload_action_information": "",
+                "workload_pool": "",
+                "performance": {
+                    "command.addinfo": {
+                        "invocations": 54,
+                        "input_count": 154569,
+                        "output_count": 154569
+                    },
+                    "command.fields": {
+                        "invocations": 53,
+                        "input_count": 154569,
+                        "output_count": 154569
+                    },
+                    "command.search": {
+                        "duration_secs": 0.127,
+                        "invocations": 53,
+                        "input_count": 0,
+                        "output_count": 154569
+                    },
+                    "command.search.calcfields": {
+                        "invocations": 52,
+                        "input_count": 154569,
+                        "output_count": 154569
+                    },
+                    "command.search.expand_search": {
+                        "duration_secs": 0.004,
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.calcfield": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.fieldaliaser": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.indexed_fields": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.kv": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.lookup": {
+                        "invocations": 1
+                    },
+                    "command.search.expand_search.sourcetype": {
+                        "invocations": 1
+                    },
+                    "command.search.fieldalias": {
+                        "invocations": 52,
+                        "input_count": 154569,
+                        "output_count": 154569
+                    },
+                    "command.search.index": {
+                        "duration_secs": 0.027,
+                        "invocations": 2
+                    },
+                    "command.search.index.usec_1_8": {
+                        "invocations": 1
+                    },
+                    "command.search.index.usec_512_4096": {
+                        "invocations": 1
+                    },
+                    "command.search.index.usec_64_512": {
+                        "invocations": 1
+                    },
+                    "command.search.index.usec_8_64": {
+                        "invocations": 1
+                    },
+                    "command.search.kv": {
+                        "duration_secs": 0.017,
+                        "invocations": 52
+                    },
+                    "command.search.lookups": {
+                        "invocations": 52,
+                        "input_count": 154569,
+                        "output_count": 154569
+                    },
+                    "command.search.parse_directives": {
+                        "invocations": 1
+                    },
+                    "command.search.rawdata": {
+                        "duration_secs": 0.069,
+                        "invocations": 13
+                    },
+                    "command.search.summary": {
+                        "invocations": 53
+                    },
+                    "command.search.tags": {
+                        "invocations": 52,
+                        "input_count": 154569,
+                        "output_count": 154569
+                    },
+                    "command.search.track_sourcetypes": {
+                        "invocations": 53
+                    },
+                    "command.search.typer": {
+                        "invocations": 52,
+                        "input_count": 154569,
+                        "output_count": 154569
+                    },
+                    "command.table": {
+                        "duration_secs": 0.165,
+                        "invocations": 1,
+                        "input_count": 154569,
+                        "output_count": 2706020
+                    },
+                    "dispatch.emit_prereport_files": {
+                        "duration_secs": 0.124,
+                        "invocations": 52
+                    },
+                    "dispatch.evaluate.search": {
+                        "duration_secs": 0.012,
+                        "invocations": 1
+                    },
+                    "dispatch.evaluate.table": {
+                        "invocations": 1
+                    },
+                    "dispatch.fetch.rcp.phase_0": {
+                        "duration_secs": 0.055,
+                        "invocations": 54
+                    },
+                    "dispatch.finalWriteToDisk": {
+                        "duration_secs": 0.131,
+                        "invocations": 1
+                    },
+                    "dispatch.localSearch": {
+                        "duration_secs": 0.129,
+                        "invocations": 1
+                    },
+                    "dispatch.stream.local": {
+                        "duration_secs": 0.127,
+                        "invocations": 53
+                    },
+                    "dispatch.writeStatus": {
+                        "duration_secs": 0.002,
+                        "invocations": 3
+                    },
+                    "startup.configuration": {
+                        "duration_secs": 0.01,
+                        "invocations": 1
+                    },
+                    "startup.handoff": {
+                        "duration_secs": 0.021,
+                        "invocations": 1
+                    }
+                },
+                "messages": [],
+                "request": {
+                    "earliest_time": "-24h",
+                    "latest_time": "now",
+                    "rf": "*",
+                    "search": "search index=_internal | table _raw",
+                    "timeout": "86400"
+                },
+                "runtime": {
+                    "auto_cancel": "0",
+                    "auto_pause": "0"
+                },
+                "searchProviders": [
+                    "1a79344b7a02"
+                ],
+                "searchTelemetry": {
+                    "timestamp": "1756064805.810474",
+                    "type": "ad-hoc",
+                    "search_id": "1756064805.1039",
+                    "root_search_id": "1756064805.1039",
+                    "status": "success",
+                    "ast": {
+                        "ast_optimize": true,
+                        "ast_visitor": [
+                            "predicate_push",
+                            "search_expansion",
+                            "predicate_merge",
+                            "predicate_split",
+                            "search_sort_normalization",
+                            "search_flip_normalization",
+                            "eval_merge",
+                            "projection_elimination",
+                            "replace_datamodel_stats_cmds_with_tstats",
+                            "replace_table_with_fields"
+                        ],
+                        "ast_modified": [
+                            "predicate_push"
+                        ]
+                    },
+                    "desc": {
+                        "app": "search",
+                        "earliest_time": 1755978405,
+                        "latest_time": 1756064805,
+                        "comments": false,
+                        "batch_mode_search": true,
+                        "nested_subsearches_flag": false,
+                        "sourcetypes": {},
+                        "search_process_modes": {
+                            "undefined": 0,
+                            "freestanding": 0,
+                            "forked": 0,
+                            "preforked_first": 0,
+                            "preforked_same_user": 1,
+                            "preforked_different_user": 0
+                        }
+                    },
+                    "perf": {
+                        "bytes_read": 27744344,
+                        "scan_count": 154569,
+                        "results_count": 154569,
+                        "subsearch_count": 0,
+                        "subsearch_auto_finalized_count": 0,
+                        "subsearch_properties": {},
+                        "non_time_ordered_results_dropped": 0,
+                        "search_runtime_secs": 0.522,
+                        "search_preview_time_secs": 0,
+                        "execution_cost": {
+                            "dispatch.finalWriteToDisk": 0.130676333,
+                            "dispatch.evaluate": 0.015868792,
+                            "dispatch.createdSearchResultInfrastructure": 0.000584916,
+                            "dispatch.localSearch": 0.129184625,
+                            "dispatch.writeStatus": 0.000704125,
+                            "dispatch.stream.local": 0.127445041
+                        }
+                    },
+                    "phases": {
+                        "phases_count": 2,
+                        "phase_1": {
+                            "elapsed_time_aggregations": {
+                                "avg": 0.527,
+                                "max": 0.527,
+                                "min": 0.527,
+                                "sum": 0.527,
+                                "count": 1
+                            },
+                            "nodes_count": 1
+                        }
+                    },
+                    "buckets": {
+                        "bloom_eliminated_rawsize": 0,
+                        "bloom_eliminated_buckets": 0,
+                        "meta_eliminated_buckets": 0,
+                        "searched_buckets": 2,
+                        "bloom_probable_hits": 0,
+                        "buckets_without_bloomfilter": 2,
+                        "max_bucket_fetch_secs": 0
+                    },
+                    "search_commands": [
+                        {
+                            "name": "table",
+                            "telemetryID": "14022723806051450322.0.0",
+                            "dagID": "1.2",
+                            "duration": 0.32,
+                            "maxPeerDuration": 0.32,
+                            "inputCount": 154569,
+                            "outputCount": 2706020,
+                            "span": {
+                                "start": 1756064805.378,
+                                "end": 1756064805.674
+                            }
+                        },
+                        {
+                            "name": "typer",
+                            "telemetryID": "15849410590227250372.0.0",
+                            "dagID": "",
+                            "duration": 0.05,
+                            "maxPeerDuration": 0.05,
+                            "inputCount": 154569,
+                            "outputCount": 154569,
+                            "span": {
+                                "start": 1756064805.375,
+                                "end": 1756064805.47
+                            }
+                        },
+                        {
+                            "name": "tags",
+                            "telemetryID": "15849410590227250372.0.1",
+                            "dagID": "",
+                            "duration": 0.05,
+                            "maxPeerDuration": 0.05,
+                            "inputCount": 154569,
+                            "outputCount": 154569,
+                            "span": {
+                                "start": 1756064805.375,
+                                "end": 1756064805.47
+                            }
+                        },
+                        {
+                            "name": "addinfo",
+                            "telemetryID": "3341115186977243142.0.0",
+                            "dagID": "1.1",
+                            "duration": 0.054,
+                            "maxPeerDuration": 0.054,
+                            "inputCount": 154569,
+                            "outputCount": 154569,
+                            "span": {
+                                "start": 1756064805.378,
+                                "end": 1756064805.509
+                            }
+                        },
+                        {
+                            "name": "resultsCollationProcessor",
+                            "telemetryID": "4406819612690207836.0.0",
+                            "dagID": "1.0",
+                            "duration": 0.106,
+                            "maxPeerDuration": 0.106,
+                            "outputCount": 309138,
+                            "span": {
+                                "start": 1756064805.325,
+                                "end": 1756064805.509
+                            }
+                        },
+                        {
+                            "name": "litsearch",
+                            "telemetryID": "4768860508388208645.0.0",
+                            "dagID": "",
+                            "duration": 0.17400000000000002,
+                            "maxPeerDuration": 0.17400000000000002,
+                            "outputCount": 154569,
+                            "count": {
+                                "evalargs_seconds": 0.7910095240000004
+                            },
+                            "span": {
+                                "start": 1756064805.341,
+                                "end": 1756064805.47
+                            }
+                        },
+                        {
+                            "name": "fieldaliaser",
+                            "telemetryID": "4768860508388208645.0.0.0.0",
+                            "dagID": "",
+                            "duration": 0.052000000000000005,
+                            "maxPeerDuration": 0.052000000000000005,
+                            "inputCount": 154569,
+                            "outputCount": 154569,
+                            "span": {
+                                "start": 1756064805.375,
+                                "end": 1756064805.47
+                            }
+                        },
+                        {
+                            "name": "calcfield",
+                            "telemetryID": "4768860508388208645.0.0.0.1",
+                            "dagID": "",
+                            "duration": 0.05,
+                            "maxPeerDuration": 0.05,
+                            "inputCount": 154569,
+                            "outputCount": 154569,
+                            "span": {
+                                "start": 1756064805.375,
+                                "end": 1756064805.47
+                            }
+                        },
+                        {
+                            "name": "lookup",
+                            "telemetryID": "4768860508388208645.0.0.0.2",
+                            "dagID": "",
+                            "duration": 0.051000000000000004,
+                            "maxPeerDuration": 0.051000000000000004,
+                            "inputCount": 154569,
+                            "outputCount": 154569,
+                            "count": {
+                                "init_time": 0.11229399999999991
+                            },
+                            "span": {
+                                "start": 1756064805.375,
+                                "end": 1756064805.47
+                            }
+                        },
+                        {
+                            "name": "kv",
+                            "telemetryID": "4768860508388208645.0.0.0.3",
+                            "dagID": "",
+                            "duration": 0.052000000000000005,
+                            "maxPeerDuration": 0.052000000000000005,
+                            "count": {
+                                "autoKV_seconds": 0,
+                                "configured_seconds": 0,
+                                "multiKV_seconds": 0,
+                                "set_required_fields_seconds": 0.0008233160000000006,
+                                "spath_seconds": 0
+                            },
+                            "span": {
+                                "start": 1756064805.375,
+                                "end": 1756064805.469
+                            }
+                        },
+                        {
+                            "name": "fields",
+                            "telemetryID": "4768860508388208645.0.1",
+                            "dagID": "",
+                            "duration": 0.053,
+                            "maxPeerDuration": 0.053,
+                            "inputCount": 154569,
+                            "outputCount": 154569,
+                            "span": {
+                                "start": 1756064805.378,
+                                "end": 1756064805.471
+                            }
+                        }
+                    ],
+                    "feature_flags": {
+                        "enabled": [
+                            "parallelreduce:enablePreview",
+                            "searchresults:srs2",
+                            "search:read_final_results_from_timeliner",
+                            "search:fetch_remote_search_telemetry",
+                            "testing:percent_flag",
+                            "testing:legacy_flag"
+                        ]
+                    }
+                }
+            },
+            "acl": {
+                "perms": {
+                    "read": [
+                        "admin"
+                    ],
+                    "write": [
+                        "admin"
+                    ]
+                },
+                "owner": "admin",
+                "modifiable": true,
+                "sharing": "global",
+                "app": "search",
+                "can_write": true,
+                "ttl": "86400"
+            }
+        }
+    ],
+    "paging": {
+        "total": 1,
+        "perPage": 0,
+        "offset": 0
+    }
+}
