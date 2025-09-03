@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log/slog"
 	"net/url"
+	"regexp"
 	"strings"
 	"time"
 )
@@ -100,6 +101,14 @@ func (c *Client) GetJobStatus(sid string) (SearchJobContent, error) {
 }
 
 func (c *Client) NewSearchJob(search string, earliest string, latest string) (string, error) {
+	// Check if search matches the regex pattern \s*(\||search ).*
+	// If not, prepend "search " to the search string
+	pattern := regexp.MustCompile(`^\s*(\||search ).*`)
+	if !pattern.MatchString(search) {
+		search = "search " + search
+		slog.Debug("Prepended 'search ' to search string", "modified_search", search)
+	}
+
 	slog.Debug("Creating new search job", "search", search, "earliest", earliest, "latest", latest)
 
 	path := "/services/search/jobs"
