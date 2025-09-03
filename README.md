@@ -8,10 +8,20 @@ A fast, concurrent Splunk search results downloader that allows you to quickly d
 
 - Go 1.25.0 or later
 
+### Download a pre-compiled binary
+
+[Go here](https://github.com/cschmidt0121/spldl/releases)
+
 ### Using go install
 Make sure `$GOPATH/bin` or `$HOME/go/bin` are in your $PATH.
 ```
 go install github.com/cschmidt0121/spldl/cmd/spldl@latest
+```
+
+### Manual compilation
+
+```
+go build -o spldl cmd/spldl/main.go
 ```
 
 ## Usage
